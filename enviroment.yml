@@ -1,0 +1,10 @@
+# librerias.yml
+name: mi_ambiente
+channels:
+  - defaults
+dependencies:
+  - python=3.8  # Especifica la versión de Python que deseas utilizar
+  - pandas
+  - beautifulsoup4
+  - selenium
+  - webdriver_manager
