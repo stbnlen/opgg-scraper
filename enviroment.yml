@@ -1,5 +1,5 @@
 # librerias.yml
-name: mi_ambiente
+name: my_enviroment
 channels:
   - defaults
 dependencies:
