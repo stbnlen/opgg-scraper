@@ -1,30 +1,53 @@
 # Op.gg Scraper
 
-This is a Python application that uses the Selenium library to perform web scraping on the op.gg website. The application is configured to be used with Conda as a virtual environment, and a librerias.yml file is provided to install the necessary dependencies.
+This is a scraper script built using Selenium to extract information about League of Legends matches from the op.gg website. The script automates the process of gathering data, allowing users to retrieve various details about matches.
 
 ## Installation
 
-1 - Clone the repository to your local machine.
+Clone the repository:
 
-2 - Create a Conda virtual environment using the librerias.yml file:
 ```
-conda env create -f enviroment.yml
+git@github.com:stbnlen/opgg-scraper.git
 ```
-3 - Activate the virtual environment:
+
+Navigate to the project directory:
+
 ```
-conda activate my_enviroment
+cd opgg-scraper
 ```
-4 - Run the main.py script to start the op.gg scraper.
+
+Install the dependencies using pip:
+
+```
+pip install -r requirements.txt
+```
+
+Make sure you have Python and pip installed on your system before proceeding with the installation.
 
 ## Usage
-After setting up the virtual environment and installing the dependencies, you can run the main.py script to start scraping data from the op.gg website. The script is designed to extract data from a specified summoner profile and region, which need to be indicated at the beginning of the script. You can modify the script to specify the summoner name and region that you want to scrape.
 
-The script will collect data such as player profiles, match history, and statistics for the specified summoner name and region. You can customize the scraping parameters and data collection as needed.
+Enter the necessary information when prompted, such as the summoner name and region.
 
-Please note that web scraping may be subject to the terms of service of the website being scraped, and it is your responsibility to ensure that your use of this application complies with all applicable laws and regulations. Use at your own risk.
+Run the script:
+
+```
+python app.py
+```
+
+Wait for the script to scrape the data from the op.gg website.
+
+The scraped data will be saved to a file named stats.csv in the project directory.
+
+The script uses Selenium to automate web browsing, so it requires a compatible web driver to be installed and configured. Make sure to download the appropriate web driver for your browser and operating system. The script is currently set up to work with Chrome, but you can modify it to use a different browser by updating the driver configuration.
 
 ## Contributing
-If you would like to contribute to this project, feel free to submit a pull request or open an issue. Any contributions are welcome!
+
+Contributions to this project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the project's GitHub repository.
+
+## Disclaimer
+
+This script is intended for educational purposes only. Use it responsibly and adhere to the terms and conditions of the op.gg website. The scraping process should not be abused or used for any malicious activities.
 
 ## License
-This project is licensed under the MIT License.
+
+The project is licensed under the MIT License. Feel free to modify and distribute the code for your own purposes.
