@@ -7,7 +7,7 @@ This is a scraper script built using Selenium to extract information about Leagu
 Clone the repository:
 
 ```
-git@github.com:stbnlen/opgg-scraper.git
+git clone git@github.com:stbnlen/opgg-scraper.git
 ```
 
 Navigate to the project directory:
